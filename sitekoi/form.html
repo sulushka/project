@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Login</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="form.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet"> 
+</head>
+     <body>
+    <div class="login-page"> 
+    <div class="form"> 
+
+    <form class="register-form" action="regis.php" method="POST"> 
+
+    <input type="text" name="fname" placeholder="First name"/> 
+    <input type="text" name="lname" placeholder="Last name"/>  
+    <input type="email" name="email" placeholder="Email"/> 
+    <input type="password" name="pwd" placeholder="Password"/> 
+    <button>Create</button> 
+    <p class="message">Already Registered?<a href="#">   Log in</a> 
+    </p> 
+    </form> 
+
+    <form class="login-form" action="login.php" method="POST">    
+          <input type="text" name="email" placeholder="Email"/>  
+          <input type="password" name="pwd" placeholder="Password"/> 
+    <button>Login</button> 
+    <p class="message">Not Registered?<a href="#">Register</a></p> 
+    
+    </form> 
+    
+    </div> 
+    </div> 
+    <script src=' https://code.jquery.com/jquery-3.3.1.min.js'> 
+    
+    </script>
+     
+    <script> 
+    $('.message a').click(function(){ 
+    $('form').animate({height:"toggle",opacity:"toggle"},"slow"); 
+    }); 
+    </script>
+     </body>
+    </html>
