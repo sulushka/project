@@ -28,19 +28,10 @@
             <div class="block-content text-center">
                 <div class="row items-push text-uppercase">
                     <div class="col-xs-6 col-sm-3">
-                        <div class="font-w700 text-gray-darker animated fadeIn">Группа</div>
+                        <div style="position:center;" class="font-w700 text-gray-darker animated fadeIn">Группа</div>
                     <a class="h2 font-w300 text-primary animated flipInX" href="javascript:void(0)"><?= $user->group ? $user->group->title : 'Админ' ?></a>
                     </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <div class="font-w700 text-gray-darker animated fadeIn">Рейтинг</div>
-                        <div class="text-warning push-10-t animated flipInX">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             <!-- END Stats -->
@@ -50,50 +41,20 @@
         <!-- Main Content -->
         <div class="row">
             <div class="col-sm-10">
-                <!-- Timeline -->
-                <div class="block block-opt-refresh-icon6">
-                    <div class="block-header">
-                        <ul class="block-options">
-                            <li>
-                                <button type="button" data-toggle="block-option" data-action="fullscreen_toggle"><i class="si si-size-fullscreen"></i></button>
-                            </li>
-                            <li>
-                                <button type="button" data-toggle="block-option" data-action="refresh_toggle" data-action-mode="demo"><i class="si si-refresh"></i></button>
-                            </li>
-                        </ul>
-                        <h3 class="block-title"><i class="fa fa-newspaper-o"></i>Обновлено</h3>
-                    </div>
-                    <div class="block-content">
-                        <!-- Facebook Notification -->
-                        <div class="block block-transparent pull-r-l">
-                            <div class="block-header bg-gray-lighter">
-                            <h3 class="block-title">{{ $user->updated_at }}</h3>
-                            </div>
-                            <div class="block-content">
-                                <p class="font-s15">Последние обновления было {{ $user->updated_at->diffForHumans() }}!</p>
-                            </div>
-                        </div>
-                        <!-- END Facebook Notification -->
+               
 
                         <!-- System Notification -->
                         <div class="block block-transparent pull-r-l">
                             <div class="block-header bg-gray-lighter">
-                                <ul class="block-options">
-                                    <li>
-                                        <span><em class="text-muted"></em></span>
-                                    </li>
-                                    <li>
-                                        <span><i class="fa fa-database text-smooth"></i></span>
-                                    </li>
-                                </ul>
+                              
                                 <h3 class="block-title">ДАННЫЕ ПОЛЬЗОВАТЕЛЯ</h3>
                             </div>
                             <div class="block-content">
-                            <p class="font-s15">{{$user->name}} <a href="javascript:void(0)">{{ $user->profile->last_name  ?? '' }}</a>.</p>
-                            <p class="font-s15">{{$user->group->title ?? '' }} <a href="javascript:void(0)">группа</a>.</p>
-                            <p class="font-s15"><a href="javascript:void(0)">Город</a> {{$user->profile->address ?? '' }} .</p>
-                            <p class="font-s15"><a href="javascript:void(0)">Возраст</a> {{$user->profile->age ?? '' }} .</p>
-                            <p class="font-s15"><a href="javascript:void(0)">Skills: </a> {{$user->profile->age ?? '' }} .</p>
+                            <p class="font-s15">{{$user->name}} <a href="javascript:void(0)">{{ $user->profile->last_name  ?? '' }}</a></p>
+                            <p class="font-s15">{{$user->group->title ?? '' }} <a href="javascript:void(0)">Группа</a></p>
+                            <p class="font-s15"><a href="javascript:void(0)">Город</a> {{$user->profile->address ?? '' }}</p>
+                            <p class="font-s15"><a href="javascript:void(0)">Возраст</a> {{$user->profile->age ?? '' }}</p>
+                          
 
                             </div>
                         </div>

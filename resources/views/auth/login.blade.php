@@ -5,8 +5,7 @@
 
         <title>Вход</title>
 
-        <meta name="description" content="OneUI - Admin Dashboard Template &amp; UI Framework created by pixelcave and published on Themeforest">
-        <meta name="author" content="pixelcave">
+       
         <meta name="robots" content="noindex, nofollow">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
 
@@ -35,7 +34,7 @@
         <!-- Web fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
 
-        <!-- Bootstrap and OneUI CSS framework -->
+      
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" id="css-main" href="assets/css/oneui.css">
 
@@ -49,18 +48,14 @@
                     <div class="block block-themed animated fadeIn">
                         <div class="block-header bg-primary">
                             <ul class="block-options">
-                                <li>
-                                    <a href="base_pages_reminder.html">Forgot Password?</a>
-                                </li>
-                                <li>
-                                    <a href="base_pages_register.html" data-toggle="tooltip" data-placement="left" title="New Account"><i class="si si-plus"></i></a>
-                                </li>
+                              
+                              
                             </ul>
                             <h3 class="block-title">Login</h3>
                         </div>
                         <div class="block-content block-content-full block-content-narrow">
                             <!-- Login Title -->
-                            <h1 class="h2 font-w600 push-30-t push-5">TI-space</h1>
+                            <h1 class="h2 font-w600 push-30-t push-5">TI space</h1>
                             <div class="card-body">
                         </div>
                 <form method="POST" action="{{ route('login') }}" class="js-validation-login form-horizontal push-30-t push-50">
@@ -81,13 +76,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <div class="col-xs-12">
-                                        <label class="css-input switch switch-sm switch-primary">
-                                            <input type="checkbox" id="login-remember-me" name="remember" {{ old('remember') ? 'checked' : '' }}><span></span> Remember Me?
-                                        </label>
-                                    </div>
-                                </div>
+                               
                                 <div class="form-group row">
                         </div>
                                 <div class="form-group">

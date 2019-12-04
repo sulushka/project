@@ -128,6 +128,7 @@
         </h2>
         <br />
         <div class="container">
+            <a href="{{route('home')}}"><button class="btn btn-default mb-2">Назад</button></a>
             <div id="calendar"></div>
         </div>
     </body>
