@@ -4,9 +4,7 @@
     <div class="block">
         <div class="block-header bg-gray-lighter">
             <ul class="block-options">
-                <li>
-                    <button data-toggle="scroll-to" data-target="#forum-reply-form" type="button"><i class="fa fa-reply"></i> Вниз</button>
-                </li>
+               
                 <li>
                     <button type="button" data-toggle="block-option" data-action="fullscreen_toggle"><i class="si si-size-fullscreen"></i></button>
                 </li>

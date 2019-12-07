@@ -1,0 +1,143 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    }
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-brand img{
+    height: 40px;
+    padding-left: 30px;
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.navbar-nav li a{
+    float: right;
+    text-align: left;
+
+}
+
+#nav-bar ul li a:hover{
+    color: #007bff!important;
+}
+
+.navbar{
+    background: #fff;
+}
+
+.navbar-toggler{
+    border: none!important;
+}
+
+.nav-link{
+    color: rgb(59, 59, 59)!important;
+    font-weight: 400!important;
+    font-size: 16px!important;
+}
+
+
+
+/*--------Aboutus-------*/
+
+#about{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #555;
+}
+
+
+
+.about-content{
+    padding-top: 20px;
+}
+
+.skills-bar p{
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.progress-bar{
+    border-radius: 16px;
+}
+
+.progress{
+    border-radius: 16px!important;
+    margin-bottom: 20px;
+}
+
+/*-----Services-----*/
+
+#services{
+    background-image: linear-gradient(rgba(32, 32, 32, 0.6),rgba(34, 34, 34, 0.6));
+    background-size: cover;
+    color: #efefef!important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#services h1{
+    text-align: center;
+    color: #efefef;
+    padding-bottom: 10px;
+}
+
+#services h3{
+    text-align: center;
+    color: #efefef;
+    padding-bottom: 10px;
+}
+
+#services h1::after{
+    content: '';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+.services{
+    margin-top: 40px;
+}
+
+.icon{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+}
+
+#services p{
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+.services .col-md-3:hover{
+    background: #007bff;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.page-footer h6::after{
+    content: '';
+    background:  #007bff;
+    display: block;
+    height: 3px;
+    width: 90px;
+    margin-top: 10px;
+}

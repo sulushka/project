@@ -119,7 +119,7 @@ class UserController extends Controller
 
     public function schedule()
     {
-        dd('schedule');
+        return view('schedule.schedule');
     }
 
 }
